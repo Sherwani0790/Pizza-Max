@@ -1,0 +1,41 @@
+
+.footer_text_container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0;
+}
+
+.copyright_div {
+    border-top: 0.2px solid rgba(255, 255, 255, 0.63);
+    width: 100%;
+    padding: 15px 0px 1px;
+    text-align: center;
+}
+
+.copyright_text {
+    color: var(--primary-color);
+
+}
+
+.footer_text_color {
+    color: var(--primary-color);
+}
+
+.img_div_icon {
+    margin-right: 10px;
+}
+
+.img_div_icon_twitter {
+    margin-right: 6px;
+}
+
+.footer-logo-main {
+    width: 150px;
+}
+.footer-section{
+    border-top: 1px solid var(--secondary-color);
+    background-color: var(--light-color);
+    /* position: fixed;
+    width: 100%;
+    bottom: 0; */
+}

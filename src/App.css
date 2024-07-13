@@ -13,9 +13,49 @@
     --defaut-border-radius: 8px;
 
 }
-body{
-    font-family: 'Nunito', sans-serif;  
-    
+
+body {
+    font-family: 'Nunito', sans-serif;
+    overflow-y: auto;
+    overscroll-behavior-x: none;
+    height: auto;
+}
+
+textarea {
+    resize: none;
+    font-family: "Inter", sans-serif !important;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--light-color);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--dark-color);
+    border-radius: 5px;
+    opacity: 0.3;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-color);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 
 p,
@@ -41,7 +81,9 @@ h6 {
 
 }
 
-.primary-button:hover {
+.primary-button:hover,
+.primary-button:active,
+.primary-button:focus {
     background-color: var(--light-color);
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
@@ -55,10 +97,41 @@ h6 {
     width: 150px;
 }
 
-.secondary-button:hover {
+.secondary-button:hover,
+.secondary-button:active,
+.secondary-button:focus {
     background-color: var(--secondary-color);
     color: var(--dark-color);
     border: 1px solid var(--dark-color);
 }
 
+.cart-button {
+    color: var(--light-color);
+    border: 1px solid var(--danger-color);
+    border-radius: var(--defaut-border-radius);
+    background-color: var(--danger-color);
+    width: 150px;
+
+}
+
+.cart-button:hover,
+.cart-button:focus,
+.cart-button:active {
+    background-color: var(--light-color);
+    color: var(--danger-color);
+    border: 1px solid var(--danger-color);
+}
+
 /* Buttons End */
+
+
+/* padding */
+.p-40 {
+    padding-top: 40px;
+}
+
+.dp-flex {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
