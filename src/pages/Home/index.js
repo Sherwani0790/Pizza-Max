@@ -6,12 +6,13 @@ import Carousal from '../../components/carousal'
 import FooterIndex from '../../components/footer'
 import { BsHandbag, BsHeart } from 'react-icons/bs'
 // Dummy Json File
-import { CATEGORY_LIST, DEFAULT_Data } from '../../data/data'
+import { B2B_DATA, CATEGORY_LIST, DEFAULT_Data } from '../../data/data'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Home = () => {
     // states
     const [data, setData] = useState(DEFAULT_Data);
+    const [data2, setData2] = useState(B2B_DATA);
     const [categoryList, setCategoryList] = useState(CATEGORY_LIST);
     return (
         <>
@@ -48,7 +49,11 @@ const Home = () => {
                                     <div className='Search-main-section'>
                                         <input type='search' placeholder='Search' className='search-input' />
                                     </div>
+                                    {/* Deffault Data */}
                                     <div className='row'>
+                                        <div className='col-md-12'>
+                                            <h2 className='content-heading'>Dessert (New) </h2>
+                                        </div>
                                         {data.map((item, index) => (
                                             <div className='col-md-12 col-lg-6 col-xl-4' key={index}>
                                                 <div className='chart-card'>
@@ -63,6 +68,41 @@ const Home = () => {
                                                             </div>
                                                             <div>
                                                                 <p className='card-text'>{item.description}</p>
+                                                            </div>
+                                                            <div className='card-price'>
+                                                                <p>{item.price}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div className='dp-flex justify-content-center'>
+                                                            <button className='btn cart-button dp-flex'> <BsHandbag /> Add To Cart</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                    {/* B2B Data */}
+                                    <div className='row'>
+                                        <div className='col-md-12'>
+                                            <h2 className='content-heading'>B2B2 Deals</h2>
+                                        </div>
+                                        {data2.map((item, index) => (
+                                            <div className='col-md-12 col-lg-6 col-xl-4' key={index}>
+                                                <div className='chart-card'>
+                                                    <div className='card-img'>
+                                                        <img className='card-img-style' src={item.img} alt='Product' />
+                                                        <div className='card-img-text'>
+                                                            <div className='dp-flex justify-content-between align-items-center'>
+                                                                <h4 className='card-title'>{item.mainHeading}</h4>
+                                                                <div className='card-icon'>
+                                                                    <BsHeart />
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <p className='card-text'>{item.description}</p>
+                                                            </div>
+                                                            <div className='card-price'>
+                                                                <p>{item.price}</p>
                                                             </div>
                                                         </div>
                                                         <div className='dp-flex justify-content-center'>
