@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.5bf74788.css",
-    "main.js": "/static/js/main.97dc5ddf.js",
-    "static/media/main-logo.png": "/static/media/main-logo.faa07650dd66d731b2b7.png",
-    "index.html": "/index.html",
-    "main.5bf74788.css.map": "/static/css/main.5bf74788.css.map",
-    "main.97dc5ddf.js.map": "/static/js/main.97dc5ddf.js.map"
+    "main.css": "/Pizza-Max/static/css/main.5bf74788.css",
+    "main.js": "/Pizza-Max/static/js/main.43d3b6d8.js",
+    "static/media/main-logo.png": "/Pizza-Max/static/media/main-logo.faa07650dd66d731b2b7.png",
+    "index.html": "/Pizza-Max/index.html",
+    "main.5bf74788.css.map": "/Pizza-Max/static/css/main.5bf74788.css.map",
+    "main.43d3b6d8.js.map": "/Pizza-Max/static/js/main.43d3b6d8.js.map"
   },
   "entrypoints": [
     "static/css/main.5bf74788.css",
-    "static/js/main.97dc5ddf.js"
+    "static/js/main.43d3b6d8.js"
   ]
 }
