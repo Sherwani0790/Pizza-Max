@@ -25,7 +25,7 @@ export const CATEGORY_LIST = [
 export const DEFAULT_Data = [
 
     {
-        id: 1,
+        id: 6,
         contentHeading: "Desert (New)",
         img: Image1,
         mainHeading: "Pizza A",
@@ -40,7 +40,7 @@ export const DEFAULT_Data = [
 export const B2B_DATA = [
 
     {
-        id: 1,
+        id: 7,
         img: Image1,
         mainHeading: "Pizza A",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -49,7 +49,7 @@ export const B2B_DATA = [
 
     },
     {
-        id: 2,
+        id: 8,
         img: Image1,
         mainHeading: "Pizza B",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
@@ -62,7 +62,7 @@ export const B2B_DATA = [
 
 export const B2C_DATA = [
     {
-        sr_no: 1,
+        id: 9,
         case_no: "CASE001",
         contact_no: "123-456-7890",
         subject: "Dummy Subject 1",
@@ -75,4 +75,17 @@ export const B2C_DATA = [
     // Add more dummy objects as needed
 ];
 
+
+
+export const PROTECTED_PAGE = [
+
+    {
+        id: 10,
+        img: Image1,
+        mainHeading: "Pizza B",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        icon: "155 5455 444",
+        price: "Calefornia",
+    }
+];
 

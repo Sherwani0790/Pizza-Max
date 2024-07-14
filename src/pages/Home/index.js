@@ -29,9 +29,9 @@ const Home = () => {
                                     <h3>All Category</h3>
                                     {/* List Collection */}
                                     <div className='category-list'>
-                                        {categoryList.map((item, index) => (
+                                        {categoryList.map((item, ind) => (
                                             <>
-                                                <div className='category-card' key={index}>
+                                                <div className='category-card' key={ind}>
 
                                                     <div className='category-highlight'>
                                                         <h5 className='category-title'>{item.categoryName}</h5>
