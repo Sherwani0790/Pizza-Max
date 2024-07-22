@@ -5,15 +5,18 @@ import './App.css';
 // Components
 import NavBar from './components/header/navbar';
 import Home from "./pages/Home";
+import { CartProvider } from "./utils/cartContext";
 
 
 function App() {
   return (
+    <CartProvider>
     <Router>
       <NavBar />
       <Route exact path="/" component={Home} />
 
     </Router>
+    </CartProvider>
   );
 }
 

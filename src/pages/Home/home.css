@@ -46,6 +46,12 @@
     color: var(--light-color);
 }
 
+.selected-category .category-highlight {
+    background-color: var(--danger-color);
+    border-radius: var(--defaut-border-radius);
+    color: var(--light-color);
+}
+
 .category-title {
     font-size: 18px;
     font-weight: 600;
@@ -110,6 +116,11 @@
     color: var(--light-color);
     padding: 5px 10px;
     border-radius: var(--defaut-border-radius);
-   font-size: 12px;
-   margin-bottom: 15px; 
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.category-card.active .category-highlight {
+    background-color: var(--danger-color);
+    border-radius: var(--defaut-border-radius);
+    color: var(--light-color);
 }

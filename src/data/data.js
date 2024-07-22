@@ -8,18 +8,18 @@ export const CATEGORY_LIST = [
         id: 2,
         categoryName: "2B2B Deals",
     },
-    {
-        id: 3,
-        categoryName: "Promo Deals",
-    },
-    {
-        id: 4,
-        categoryName: "Max Value Deals",
-    },
-    {
-        id: 5,
-        categoryName: "Royal Crown Pizza",
-    },
+    // {
+    //     id: 3,
+    //     categoryName: "Promo Deals",
+    // },
+    // {
+    //     id: 4,
+    //     categoryName: "Max Value Deals",
+    // },
+    // {
+    //     id: 5,
+    //     categoryName: "Royal Crown Pizza",
+    // },
 
 ];
 export const DEFAULT_Data = [

@@ -4,7 +4,7 @@
     position: fixed;
     width: 100%;
     top: 1px;
-    /* z-index: 9999; */
+    z-index: 999;
 }
 
 .nav-logo-main {
@@ -24,11 +24,13 @@
     font-size: 14px;
 
 }
+
 .offcanvas.offcanvas-start {
     /* width: 300px; */
     right: 0 !important;
     left: auto !important;
 }
-.cart-logo{
+
+.cart-logo {
     width: 50px !important;
 }
