@@ -14,6 +14,10 @@ import SignupModal from '../modal/signupmodal';
 import { B2B_DATA } from '../../../data/data';
 // import { BsHandbag } from 'react-icons/bs';
 import { CartContext } from '../../../utils/cartContext';
+// react icons
+import { FiMinus } from "react-icons/fi"; import { FaPlus } from "react-icons/fa";
+
+
 const NavBar = () => {
     // States
     const [show, setShow] = useState(false);
@@ -113,10 +117,12 @@ const NavBar = () => {
                                                         <p>{item.price}</p>
                                                     </div>
                                                 </div>
-                                                <div className='dp-flex'>
-                                                    <div className='pointer'>+</div>
-                                                    <div className='pointer'>0</div>
-                                                    <div className='pointer'>-</div>
+                                                <div className='dp-flex justify-content-between'>
+                                                    <div ><FiMinus className='pointer' />
+                                                    </div>
+                                                    <div>0</div>
+                                                    <div ><FaPlus className='pointer' />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
