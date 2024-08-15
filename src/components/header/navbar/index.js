@@ -36,7 +36,15 @@ const NavBar = () => {
         email: "",
     });
     const [data2, setData2] = useState(B2B_DATA);
-    const { cartItems, itemCount } = useContext(CartContext);
+    const { cartItems, itemCount, updateItemQuantity, totalPrice } = useContext(CartContext);
+    const handleIncrement = (itemId) => {
+        updateItemQuantity(itemId, 1);
+    };
+
+    const handleDecrement = (itemId) => {
+        updateItemQuantity(itemId, -1);
+    };
+
 
     return (
         <>
@@ -118,18 +126,20 @@ const NavBar = () => {
                                                     </div>
                                                 </div>
                                                 <div className='dp-flex justify-content-between'>
-                                                    <div ><FiMinus className='pointer' />
-                                                    </div>
-                                                    <div>0</div>
-                                                    <div ><FaPlus className='pointer' />
-                                                    </div>
+                                                    <div><FiMinus className='pointer' onClick={() => handleDecrement(item.id)} /></div>
+                                                    <div>{item.quantity}</div>
+                                                    <div><FaPlus className='pointer' onClick={() => handleIncrement(item.id)} /></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 ))
                             )}
-
+                            <div className='col-md-12'>
+                                <div className='total-price'>
+                                <h4>Total Price {totalPrice}</h4>
+                                </div>
+                            </div>
                         </div>
                     </ListGroup>
                 </Offcanvas.Body>
